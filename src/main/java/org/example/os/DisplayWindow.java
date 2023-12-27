@@ -12,6 +12,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import org.example.os.HelloController;
 import org.kordamp.ikonli.bootstrapicons.BootstrapIcons;
@@ -53,6 +54,7 @@ public class DisplayWindow extends Application {
         DisplayWindow controller = fxmlLoader.getController();
         upper = controller.upper;
         stage.setTitle("文件系统");
+        stage.getIcons().add(new Image(String.valueOf(HelloView.class.getResource("文件系统.png"))));
         username = controller.username;
         tableView = controller.tableView;
         tree = controller.tree;

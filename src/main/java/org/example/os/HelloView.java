@@ -11,6 +11,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TableView;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -33,6 +34,7 @@ public class HelloView extends Application {
         controller = fxmlLoader1.getController();
         primaryStage.setTitle("Login to File System");
         primaryStage.setScene(scene);
+        primaryStage.getIcons().add(new Image(String.valueOf(HelloView.class.getResource("登录.png"))));
         controller.Login_button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
