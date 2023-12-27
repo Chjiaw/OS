@@ -140,6 +140,7 @@ public class DisplayWindow extends Application {
 
                 boolean permission = writepermission(item);
                 if (permission) {
+//                    if()
                     Connection connection = null;
                     try {
                         connection = DBConnection.getConnection();
@@ -485,7 +486,7 @@ public class DisplayWindow extends Application {
         int a = 0, b = 0, c = 0;
         if (user.getId() == file.getOnwer()) {//拥有者
             a = file.getOwner_permissions() & 2;
-            System.out.println(a);
+//            System.out.println(a);
         } else if (user.getGroup() == file.getGroup_id()) {//是同组用户
             b = file.getGroup_permissions() & 2;
         } else {//是其他用户
