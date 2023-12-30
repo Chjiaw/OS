@@ -14,7 +14,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import org.example.os.HelloController;
+
 import org.kordamp.ikonli.bootstrapicons.BootstrapIcons;
 import org.kordamp.ikonli.javafx.FontIcon;
 
@@ -184,26 +184,6 @@ public class DisplayWindow extends Application {
                 // 关闭文件阅读界面
                 // 设置Opend 为 False
             });
-            //MenuItem renameItem = new MenuItem("rename");
-            // 未实现重命名的权限检查
-//            renameItem.setOnAction(event -> {
-//                int selectedIdx = tableView.getSelectionModel().getSelectedIndex();
-////                boolean permission = xpermission()
-//                if (selectedIdx >= 0) {
-//                    tableView.requestFocus();
-//                    tableView.getSelectionModel().select(selectedIdx);
-//                    tableView.edit(selectedIdx, controller.c1); // c1为你要编辑的列
-//                    TableCell<?, ?> cell = controller.c1.getCellFactory().call(controller.c1);
-//                    if (cell != null) {
-//                        // 检查单元格是否处于可编辑状态，这取决于单元格的实现方式
-//                        if (cell.isEditable() && cell instanceof TextFieldTableCell<?, ?>) {
-//                            ((TextFieldTableCell<?, ?>) cell).startEdit();
-//                            // 注：可能还需要其他的代码来显示编辑的TextField控件和确保它获得焦点
-//                            // 例如，你可能需要调用 textField.requestFocus() 之类的
-//                        }
-//                    }
-//                }
-//            });
             // 将菜单项添加到上下文菜单
             contextMenu.getItems().addAll(editItem, deleteItem, openItem);//, renameItem);
 
